@@ -16,7 +16,7 @@ export default function SignUp() {
       });
   };
 
-  // from submission
+  // form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -30,14 +30,14 @@ export default function SignUp() {
     });
     const data = await res.json();
     console.log(data);
-    if(data.succes === false) {
+    if(data.success === false) {
       setLoading(false);
       setError(data.message);
       return;
     }
     setLoading(false);
     setError(null);
-    navigate('sign-in');
+    navigate('/sign-in');
       
     } catch (error) {
       setLoading(false);
