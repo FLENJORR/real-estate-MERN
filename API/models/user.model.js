@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     },
     avatar: {
         type: String,
-        default: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+        default: "https://www.freepik.com/free-photo/excited-overwhelmed-cute-amused-dark-skinned-womanfriend-red-t-shirt-smiling-broadly-pressing-palms-together-near-chest-standing-thrilled-thankful-awesome-gift-white-wall_17942743.htm#query=lady%20smiling&position=24&from_view=keyword&track=ais"
     }
 }, 
 { timestamps: true}
