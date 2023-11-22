@@ -34,6 +34,8 @@ export const updateUser = async (req, res, next) => {
     }
 }
 
+//////////////////////////
+
 // delete userr
 
 export const deleteUser = async (req, res, next) => {
@@ -46,3 +48,5 @@ export const deleteUser = async (req, res, next) => {
         next(error)
     }
 }
+
+//////////////////////////////////
