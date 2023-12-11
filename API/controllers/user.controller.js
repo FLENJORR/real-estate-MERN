@@ -5,7 +5,7 @@ import Listing from '../models/listing.model.js';
 
 export const test = (req, res) => {
     res.json({
-        message:'my name is serlis'
+        message: 'my name is serlis'
     });
 }
 // update profile info
@@ -52,6 +52,8 @@ export const deleteUser = async (req, res, next) => {
 
 //////////////////////////////////
 
+////// get users listings
+
 export const getUserListings = async (req, res, next) => {
     if(req.user.id === req.params.id) {
         try {
@@ -65,3 +67,5 @@ export const getUserListings = async (req, res, next) => {
         return next(errorHandler(401, 'You can only view your own listings !'))
     }
 }
+
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
